@@ -11,7 +11,6 @@ set -g fish_color_autosuggestion 979daa
 set -g theme_display_git yes
 set -g theme_display_git_untracked no
 set -g theme_display_git_ahead_verbose yes
-set -g theme_git_worktree_support yes
 set -g theme_display_vagrant yes
 set -g theme_display_docker_machine yes
 set -g theme_display_hg yes
