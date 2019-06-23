@@ -5,6 +5,8 @@ alias cat='bat'
 
 export WINEESYNC=1
 
+set PATH $HOME/.cargo/bin $PATH
+
 set -g fish_color_autosuggestion 979daa
 
 # Bobthefish Overrides
