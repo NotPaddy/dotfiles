@@ -2,6 +2,7 @@ alias ls='ls --color=auto'
 alias ll='ls -la --color=auto'
 alias la='ls -a --color=auto'
 alias cat='bat'
+alias logout='dbus-send --print-reply --dest=org.kde.ksmserver /KSMServer org.kde.KSMServerInterface.logout int32:0 int32:0 int32:0'
 
 export WINEESYNC=1
 

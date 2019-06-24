@@ -1,0 +1,8 @@
+# Kill Plasma view
+exec --no-startup-id wmctrl -c Plasma
+
+# Don’t treat Plasma pop-ups as full-sized windows
+for_window [class="plasmashell"] floating enable
+
+# Don’t spawn an empty window for the Plasma Desktop
+for_window [title="Desktop — Plasma"] kill; floating enable, border none
