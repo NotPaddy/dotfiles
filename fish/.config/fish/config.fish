@@ -10,6 +10,8 @@ set PATH $HOME/.cargo/bin $PATH
 
 set -g fish_color_autosuggestion 979daa
 
+thefuck --alias | source
+
 # Bobthefish Overrides
 set -g theme_display_git yes
 set -g theme_display_git_untracked no
