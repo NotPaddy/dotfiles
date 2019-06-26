@@ -7,3 +7,4 @@ Visuals are configuered to fit with [Sweet KDE](https://store.kde.org/p/1294174/
 ## Usage
 * Clone to `~/dotfiles`
 * `stow <directory>` to symlink that configuration bundle
+* You might have to delete the existing configuration files because Stow will not override.

@@ -3,7 +3,7 @@
 configuration {
   modi: "window,drun,run,ssh";
   width: 24;
-  lines: 9;
+  lines: 10;
   font: "Roboto Mono 10";
   columns: 1;
   show-icons: false;
