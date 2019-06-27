@@ -31,7 +31,7 @@ alert = #bd2c40
 ;monitor = ${env:MONITOR:eDP1}
 width = 100%
 height = 24
-;offset-x = 1%
+;offset-x = 1%border-color = #00000000
 ;offset-y = 1%
 radius = 2.0
 fixed-center = true
@@ -48,7 +48,7 @@ border-color = #00000000
 padding-left = 0
 padding-right = 2
 
-module-margin-left = 1
+module-margin-left = 2
 module-margin-right = 2
 
 font-0 = Roboto:style=Regular:size=10;2
@@ -207,11 +207,8 @@ format-connected = <ramp-signal> <label-connected>
 format-connected-underline = #9f78e1
 label-connected = %essid%
 
-format-disconnected =
-;format-disconnected = <label-disconnected>
-;format-disconnected-underline = ${self.format-connected-underline}
-;label-disconnected = %ifname% disconnected
-;label-disconnected-foreground = ${colors.foreground-alt}
+format-disconnected =  
+format-disconnected-underline = ${colors.alert}
 
 ramp-signal-0 = 
 ramp-signal-1 = 
@@ -380,20 +377,14 @@ menu-0-1-exec = menu-open-2
 menu-0-2 = logout
 menu-0-2-exec = menu-open-3
 
-menu-1-0 = cancel
-menu-1-0-exec = menu-open-0
-menu-1-1 = reboot
-menu-1-1-exec = reboot
+menu-1-0 = reboot
+menu-1-0-exec = reboot
 
 menu-2-0 = power off
 menu-2-0-exec = shutdown now
-menu-2-1 = cancel
-menu-2-1-exec = menu-open-0
 
 menu-3-0 = logout
 menu-3-0-exec = dbus-send --print-reply --dest=org.kde.ksmserver /KSMServer org.kde.KSMServerInterface.logout int32:0 int32:0 int32:0
-menu-3-1 = cancel
-menu-3-1-exec = menu-open-0
 
 [settings]
 screenchange-reload = true
