@@ -1,0 +1,135 @@
+* {
+    border: none;
+    border-radius: 0;
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    min-height: 0;
+}
+
+window#waybar {
+    background: rgba(43, 48, 59, 0.3);
+    border-bottom: 3px solid transparent;
+    color: @foreground;
+}
+
+#workspaces button {
+    padding: 0 5px;
+    background: rgba(43, 48, 59, 0.8);
+    color: @foreground;
+    border-bottom: 3px solid transparent;
+}
+
+#workspaces button.focused {
+    background: rgba(100, 114, 125, 0.2);
+    border-bottom: 3px solid @color15;
+}
+
+#workspaces button.urgent {
+    background-color: #eb4d4b;
+}
+
+#mode {
+    background: transparent;
+    border-bottom: 3px solid @color15;
+}
+
+#clock,
+#battery,
+#cpu,
+#memory,
+#temperature,
+#backlight,
+#network,
+#pulseaudio,
+#custom-media,
+#tray,
+#mode,
+#idle_inhibitor {
+    padding: 0 6px;
+    margin: 0 3px;
+}
+
+#clock {
+    background-color: transparent;
+    border-bottom: 3px solid @color1;
+    color: @foreground;
+}
+
+#battery {
+    background-color: @color14;
+    color: white;
+}
+
+#battery.charging {
+    color: white;
+    background-color: #26A65B;
+}
+
+@keyframes blink {
+    to {
+        background-color: #ffffff;
+        color: #000000;
+    }
+}
+
+#battery.warning:not(.charging) {
+    background: #f53c3c;
+    color: white;
+    animation-name: blink;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+##cpu {
+    background: transparent;
+    border-bottom: 3px solid @color5;
+    color: @foreground;
+}
+
+#memory {
+    background: transparent;
+    border-bottom: 3px solid @color7;
+    color: @foreground;
+}
+
+#backlight {
+    background-color: @color15;
+}
+
+#network {
+    background: transparent;
+    border-bottom: 3px solid @color16;
+    color: @foreground
+}
+
+#network.disconnected {
+    background: transparent;
+    color: @color15;
+}
+
+#pulseaudio {
+    background: transparent;
+    border-bottom: 3px solid @color15;
+    color: @foreground;
+}
+
+#pulseaudio.muted {
+    background: #90b1b1;
+    color: #2a5c45;
+}
+
+#temperature {
+    background-color: transparent;
+    border-bottom: 3px solid @color15;
+}
+
+#temperature.critical {
+    background-color: #eb4d4b;
+}
+
+#tray {
+    background-color: transparent;
+    border-bottom: 3px solid @color15;
+}

@@ -1,0 +1,34 @@
+#window {
+    background-color: #01010d;
+    opacity: 0.8;
+}
+
+#outer-box {
+    border: solid #f25d70 2px;
+}
+
+#input {
+    border-radius: 0;
+    border-color: #020208;
+    opacity: 0.9;
+    background-color: #020208;
+    color: #d4d4d4;
+}
+
+#text {
+    opacity: 1.0;
+}
+
+#img {
+    opacity: 1.0;
+}
+
+#entry {
+    opacity: 1.0;
+    color: #d4d4d4;
+}
+
+#entry:selected {
+    background-color: #f25d70;
+    color: #0d0d0d;
+}

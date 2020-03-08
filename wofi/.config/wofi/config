@@ -1,0 +1,8 @@
+allow_images=false
+allow_markup=true
+mode=drun
+insensitive=true
+
+width=320
+height=320
+color=~/.cache/wal/colors
