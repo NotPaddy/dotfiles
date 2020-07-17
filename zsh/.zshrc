@@ -77,6 +77,7 @@ plugins=(
 	systemd
 	thefuck
 	zsh-autosuggestions
+	zsh-completions
 	zsh-syntax-highlighting
 )
 

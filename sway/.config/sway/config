@@ -13,7 +13,7 @@ set $term kitty
 # Your preferred application launcher
 # Note: it's recommended that you pass the final command to sway
 #set $menu dmenu_path | rofi -i -modi drun,run,window -show drun | xargs swaymsg exec --
-set $menu "rofi -i -show drun"
+set $menu "dmenu_path | wofi --show drun -i | xargs swaymsg exec --"
 
 ### Output configuration
 #
