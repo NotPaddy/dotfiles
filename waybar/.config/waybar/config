@@ -7,7 +7,7 @@
     "modules-left": ["sway/workspaces", "sway/mode"],
     //"modules-center": ["sway/window"],
     "modules-center": ["mpd"],
-    "modules-right": ["pulseaudio", "network", "cpu", "memory", "temperature", "backlight", "battery", "clock", "tray"],
+    "modules-right": ["pulseaudio", "bluetooth", "network", "cpu", "memory", "temperature", "backlight", "battery", "clock", "tray"],
     // Modules configuration
     // "sway/workspaces": {
     //     "disable-scroll": true,
@@ -125,5 +125,13 @@
             "default": ["", "", ""]
         },
         "on-click": "pavucontrol"
+    },
+    "bluetooth": {
+	"format": "{icon}",
+	"format-alt": "bluetooth: {status}",
+	"format-icons": {
+	    "enabled": "ᛒ",
+	    "disabled": "-"
+	}
     }
 }

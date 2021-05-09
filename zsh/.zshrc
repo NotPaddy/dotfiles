@@ -112,6 +112,7 @@ alias vim=nvim
 alias shutdown="systemctl poweroff"
 
 export GRAALVM_HOME="/usr/lib/jvm/java-8-graalvm"
+export DOTNET_CLI_TELEMETRY_OPTOUT=1
 export PATH="~/.local/bin:$PATH"
 (/usr/bin/cat ~/.cache/wal/sequences &)
 source ~/.cache/wal/colors-tty.sh

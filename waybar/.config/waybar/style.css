@@ -1,3 +1,5 @@
+@import "/home/notpaddy/.cache/wal/colors-waybar.css";
+
 * {
     border: none;
     border-radius: 0;
@@ -41,6 +43,7 @@ window#waybar {
 #backlight,
 #network,
 #pulseaudio,
+#bluetooth,
 #custom-media,
 #tray,
 #mode,
@@ -82,25 +85,27 @@ window#waybar {
     animation-direction: alternate;
 }
 
-##cpu {
+#cpu {
     background: transparent;
-    border-bottom: 3px solid @color5;
+    border-bottom: 3px solid @color13;
     color: @foreground;
 }
 
 #memory {
     background: transparent;
-    border-bottom: 3px solid @color7;
+    border-bottom: 3px solid @color13;
     color: @foreground;
 }
 
 #backlight {
-    background-color: @color15;
+    background: transparent;
+    border-bottom: 3px solid @color13;
+    color: @foreground
 }
 
 #network {
     background: transparent;
-    border-bottom: 3px solid @color16;
+    border-bottom: 3px solid @color13;
     color: @foreground
 }
 
@@ -111,7 +116,7 @@ window#waybar {
 
 #pulseaudio {
     background: transparent;
-    border-bottom: 3px solid @color15;
+    border-bottom: 3px solid @color13;
     color: @foreground;
 }
 
@@ -120,9 +125,15 @@ window#waybar {
     color: #2a5c45;
 }
 
+#bluetooth {
+    background: transparent;
+    border-bottom: 3px solid @color13;
+    color: @foreground;
+}
+
 #temperature {
     background-color: transparent;
-    border-bottom: 3px solid @color15;
+    border-bottom: 3px solid @color13;
 }
 
 #temperature.critical {
@@ -131,5 +142,5 @@ window#waybar {
 
 #tray {
     background-color: transparent;
-    border-bottom: 3px solid @color15;
+    border-bottom: 3px solid @color13;
 }
