@@ -9,7 +9,7 @@ set $mod Mod4
 #set $up k
 #set $right l
 # Your preferred terminal emulator
-set $term kitty 
+set $term alacritty 
 # Your preferred application launcher
 # Note: it's recommended that you pass the final command to sway
 #set $menu dmenu_path | rofi -i -modi drun,run,window -show drun | xargs swaymsg exec --

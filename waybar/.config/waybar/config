@@ -7,7 +7,7 @@
     "modules-left": ["sway/workspaces", "sway/mode"],
     //"modules-center": ["sway/window"],
     "modules-center": ["mpd"],
-    "modules-right": ["pulseaudio", "bluetooth", "network", "cpu", "memory", "temperature", "backlight", "battery", "clock", "tray"],
+    "modules-right": ["pulseaudio", "bluetooth", "network", "cpu", "memory", "temperature", "backlight", "battery#internal", "battery#swap", "clock", "tray"],
     // Modules configuration
     // "sway/workspaces": {
     //     "disable-scroll": true,
@@ -82,11 +82,12 @@
         "format": "{percent}% {icon}",
         "format-icons": ["", ""]
     },
-    "battery": {
+    "battery#internal": {
+        "bat": "BAT0",
         "states": {
-            // "good": 95,
-            "warning": 30,
-            "critical": 15
+            "good": 80,
+            "warning": 35,
+            "critical": 20
         },
         "format": "{capacity}% {icon}",
         "format-charging": "{capacity}% ",
@@ -96,8 +97,20 @@
         // "format-full": "",
         "format-icons": ["", "", "", "", ""]
     },
-    "battery#bat2": {
-        "bat": "BAT1"
+    "battery#swap": {
+        "bat": "BAT1",
+        "states": {
+            "good": 80,
+            "warning": 35,
+            "critical": 20
+        },
+        "format": "{capacity}% {icon}",
+        "format-charging": "{capacity}% ",
+        "format-plugged": "{capacity}% ",
+        "format-alt": "{time} {icon}",
+        // "format-good": "", // An empty format will hide the module
+        // "format-full": "",
+        "format-icons": ["", "", "", "", ""]
     },
     "network": {
         // "interface": "wlp2*", // (Optional) To force the use of this interface

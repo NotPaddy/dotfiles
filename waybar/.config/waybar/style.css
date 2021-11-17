@@ -59,13 +59,14 @@ window#waybar {
 }
 
 #battery {
-    background-color: @color14;
+    background-color: transparent;
+    border-bottom: 3px solid @color14;
     color: white;
 }
 
 #battery.charging {
-    color: white;
     background-color: #26A65B;
+    color: white;
 }
 
 @keyframes blink {
